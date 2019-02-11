@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+}
+h1,h2,h3{
+  font-weight: 400;
+}
+.headers{
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+label{
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+input {
+  width: 100%;
+  display: block;
+  line-height: 22px;
+  min-height: 35px;
+  border-radius: 3px;
+}
+.loginBox{
+  margin: 0 auto;
+  width: 340px;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+.formBox{
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d8dee2;
+}
+.inputBox{
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 20px;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+  border: 1px solid #d1d5da;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.inputBox:focus{
+  outline: none;
+  border: 1px solid #2188ff;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,.075), 0 0 0 0.2em rgba(3,102,214,.3);
+}
+.passwdLink{
+  font-weight: 500;
+  color: #0366d6;
+  text-decoration: none;
+  float: right;
+  font-size: 12px;
+}
+.btn{
+  font-size: 1em;
+  background: #28a745;
+  background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn:hover{
+  background: darken(#28a745, 10%);
+  background-image: linear-gradient(-180deg,#34d058,#28a745 95%);
+}
