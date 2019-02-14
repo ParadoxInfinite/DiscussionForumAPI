@@ -1,0 +1,44 @@
+.dropdown-menu{
+  background: #343a40;
+  border: 1px solid lighten(grey, 30%);
+  .dropdown-item{
+    color: white;
+  }
+}
+.searchBox{
+  position: relative;
+  input{
+    width: 100%;
+  }
+  .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.navbar-collapse{
+  text-align: right;
+  background: #343a40;
+}
+h1{
+  margin: 50px 0;
+}
+.topicsBox{
+  text-align: left;
+  background: white;
+  border: 1px solid lighten(grey,20%);
+}
+.topicsTable{
+  th{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 8px 30px;
+  }
+  width: 100%;
+}
+.title{
+  background: lightblue;
+    .titleForums,.titleTopic,.titlePosts{
+      width: 33%;
+    }
+}
