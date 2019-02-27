@@ -5,6 +5,9 @@
 .dropdown-menu .dropdown-item {
   color: white;
 }
+.dropdown-menu .dropdown-item:hover {
+  color: #343a40;
+}
 
 .searchBox {
   position: relative;
@@ -39,14 +42,23 @@ h1 {
 .topicsTable th {
   font-size: 0.9em;
   text-transform: uppercase;
-  padding: 8px 30px;
+  padding: 10px 50px;
+}
+
+.data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.data th {
+  cursor: pointer;
+  width: 100%;
+}
+.data ::after {
+  float: right;
+  content: "+";
 }
 
 .title {
   background: lightblue;
-}
-.title .titleForums, .title .titleTopic, .title .titlePosts {
-  width: 33%;
 }
 
 /*# sourceMappingURL=main.css.map */
