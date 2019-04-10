@@ -18,8 +18,7 @@ input {
 }
 .loginBox{
   margin: 0 auto;
-  width: 380px;
-  padding: 0 16px;
+  width: 400px;
   line-height: 2;
 }
 .formBox{
@@ -27,6 +26,12 @@ input {
   padding: 20px;
   background: white;
   border: 1px solid #d8dee2;
+}
+.alert{
+  border-radius: 5px;
+  margin: 10px 0;
+  background: red;
+  color : white;
 }
 .inputBox{
   padding: 0 10px;

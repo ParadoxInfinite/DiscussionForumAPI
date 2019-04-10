@@ -10,8 +10,10 @@ router.get('/register', (req, res, next) => {
 });
 
 router.post('/register', (req, res, next) => {
-    console.log(req.body);
-    res.redirect('/login');
+  console.log(req.body);
+  var pass = req.body.password;
+  var cpass = req.body.cpassword;
+  if (pass !== cpass) {} else res.redirect('/login');
 });
 
 module.exports = router;

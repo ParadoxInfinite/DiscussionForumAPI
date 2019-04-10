@@ -4,10 +4,13 @@
   "description": "IWT Project for 6th Semester",
   "main": "app.js",
   "dependencies": {
+    "connect-mongo": "^2.0.3",
     "express": "^4.16.4",
-    "mongoose": "^5.4.20"
+    "express-session": "^1.15.6"
   },
   "devDependencies": {
+    "bcrypt": "^3.0.5",
+    "mongoose": "^5.4.22",
     "nodemon": "^1.18.10"
   },
   "scripts": {
