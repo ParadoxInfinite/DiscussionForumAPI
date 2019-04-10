@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8">
@@ -47,6 +48,140 @@
         <div class="searchBox">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Post</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/master.css">
+    
+    <style>
+ 
+  body {
+  font-family: "Montserrat", sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  
+}
+  textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color:white;
+  font-size: 16px;
+  resize: none;
+  vertical-align: top;
+  
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input[type=submit]{
+  width: 10%;
+  background-color: rgb(58, 55, 56);
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.new-post{
+    padding: 50px;
+}
+
+label{
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+}
+</style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DiscussionForum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Announcements</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Subject 1</a>
+                <a class="dropdown-item" href="#">Subject 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">All Subjects</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="searchBox">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </nav>   
+  
+<form action="">
+        <div class='new-post'>
+            
+            <label for="title">Title:</label>
+            <input class='tclass' id='title' type='text'>
+            <br><br>
+            <label for="opt">Category:</label>
+                    <select placeholder='select' id="opt" name='cat' class='cat-selector'>
+                        <option value='C Programming'>C Programming</option>
+                        <option value="python">Python</option>
+                        <option value="dbms">DBMS</option>
+                        <option value="cn">Computer Networks</option>
+                        <option value="unix">UNIX</option>
+                        <option value="java">Java</option>
+                    </select>
+            <br><br>
+            <label for="msg">Message:</label>
+            <textarea name="msg" id="msg" cols="30" rows="6"></textarea>
+            <br><br>
+            <label>Upload:</label>
+            <img src="" alt="">
+            <input type="file" class="img-upload" id="commentImage">
+            <br><br>
+            <input type="submit" class="btn-success" value="Submit">
+>>>>>>> 85f28aad385a06acfda236bb9a061a4608e67aff
         </div>
       </form>
     </div>
