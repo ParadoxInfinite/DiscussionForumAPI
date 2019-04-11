@@ -5,9 +5,9 @@ const loginRoutes = require('./routes/login');
 const registerRoutes = require('./routes/register');
 const createPostRoutes = require('./routes/createpost');
 const path = require('path')
-
 const express = require('express');
 const app = express();
+app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path')
 const forumRoutes = require('./forum');
+const PostSchema = require('../util/PostSchema');
 
 
 const router = express.Router();
@@ -10,7 +11,25 @@ router.get('/createpost', (req, res, next) => {
 });
 
 router.post('/createpost', (req, res, next) => {
-  console.log(req.body);
+  var title = req.body.title;
+  var category = req.body.category;
+  var postContent = req.body.post;
+  var newPost = new PostSchema({
+    title: title,
+    category: category,
+    post: postContent
+  });
+  var MongoClient = require('mongodb').MongoClient
+
+  MongoClient.connect('mongodb://localhost:27017/discussionforum', {
+    useNewUrlParser: true
+  }, function(err, client) {
+    if (err) throw err
+
+    var db = client.db('discussionforum')
+
+    db.collection('Posts').insertOne(newPost);
+  })
   res.redirect('/forums');
 });
 

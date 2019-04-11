@@ -54,12 +54,23 @@
     <div class="topicsBox">
       <table class="topicsTable">
         <tr class="title">
-          <th class="titleForums">Forums</th>
-          <th class="titleTopic">Topic</th>
-          <th class="titlePosts">Posts</th>
+          <th class="titleForums">Title</th>
+          <th class="titleTopic">Category</th>
+          <th class="titlePosts">Author</th>
         </tr>
-        <tr class="data">
+        <% for(var e in results){ %>
+        <tr>
+          <td class="data">
+            <%= results[e].title %>
+          </td>
+          <td class="data">
+            <%= results[e].category %>
+          </td>
+          <td class="data">
+            <%= results[e].post %>
+          </td>
         </tr>
+        <%}%>
       </table>
     </div>
   </div>
