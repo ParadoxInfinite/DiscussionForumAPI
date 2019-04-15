@@ -77,4 +77,11 @@ input {
   background-image: linear-gradient(-180deg, #34d058, #28a745 95%);
 }
 
+.error {
+  width: 100%;
+  padding: 5px;
+  background: red;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=index.css.map */

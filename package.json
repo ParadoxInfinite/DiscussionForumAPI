@@ -4,6 +4,7 @@
   "description": "IWT Project for 6th Semester",
   "main": "app.js",
   "dependencies": {
+    "bad-words": "^3.0.2",
     "connect-mongo": "^2.0.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",

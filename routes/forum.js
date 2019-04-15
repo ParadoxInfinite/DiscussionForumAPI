@@ -2,12 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const rootDir = require('../util/path');
+var MongoClient = require('mongodb').MongoClient
 
 const router = express.Router();
 
 
 router.get('/forums', (req, res, next) => {
-  var MongoClient = require('mongodb').MongoClient
 
   MongoClient.connect('mongodb://localhost:27017/discussionforum', {
     useNewUrlParser: true

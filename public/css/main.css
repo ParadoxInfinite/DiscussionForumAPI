@@ -46,9 +46,17 @@ h1 {
 }
 
 .data {
-  padding : 0 50px;
-  font-family: 'Montserrat', sans-serif;
+  padding: 4px 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.data th {
+  cursor: pointer;
+  width: 100%;
+}
+
+.postButton {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .title {

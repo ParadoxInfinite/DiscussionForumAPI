@@ -14,8 +14,14 @@
     <h2>Register to the Discussion Forum</h2>
     <div class="formBox">
       <form class="" action="/register" id="regForm" method="POST">
+        <span>Already have an account? <a href="/login">Login!</a></span>
         <label for="username">Username</label>
         <input type="text" name="username" id="username" class="inputBox" required>
+        <%if (error){%>
+        <span class="error">
+          <%=error%>
+        </span>
+        <%}%>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" class="inputBox" required>
         <label for="usn">USN</label>

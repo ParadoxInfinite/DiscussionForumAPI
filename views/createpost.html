@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar navbar-fixed navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">DiscussionForum</a>
+    <a class="navbar-brand" href="/forums">DiscussionForum</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,21 +26,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="forums">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Announcements</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Topics
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Subject 1</a>
-            <a class="dropdown-item" href="#">Subject 2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">All Subjects</a>
-          </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -53,7 +42,7 @@
     <h2>Create a new post!</h2>
     <form class="formBox" action="/createpost" method="POST">
       <label for="title">Title</label>
-      <input type="text" name="title">
+      <input type="text" name="title" required>
       <label for="category">Category</label>
       <select placeholder='select' id="category" name='category'>
         <option value='PIC'>C Programming</option>
@@ -64,8 +53,9 @@
         <option value="Java">Java</option>
       </select>
       <label for="post">Message/Question</label>
-      <textarea name="post" id="post" cols="30" rows="6"></textarea>
-      <input type="submit" class="btn-success" value="Create Post!">
+      <textarea name="post" id="post" cols="30" rows="6" required></textarea>
+      <a href="/forums"><input type="button" class="btn-success button" name="back" value="Go back to forums."></a>
+      <input type="submit" class="btn-success button" value="Create Post!">
     </form>
   </div>
 </body>

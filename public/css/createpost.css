@@ -26,6 +26,10 @@ body {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+.createPostBox .button {
+  width: 45%;
+  display: inline-block;
+}
 .createPostBox textarea {
   max-height: 280px;
 }

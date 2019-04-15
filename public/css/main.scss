@@ -40,15 +40,16 @@ h1{
   width: 100%;
 }
 .data{
+  padding : 4px 50px;
   th{
     cursor: pointer;
     width: 100%;
   }
-  ::after{
-    float : right;
-    content : "+";
-  }
   border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+.postButton{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .title{
   background: lightblue;
