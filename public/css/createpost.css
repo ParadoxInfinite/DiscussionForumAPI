@@ -34,4 +34,8 @@ body {
   max-height: 280px;
 }
 
+.other {
+  display: none !important;
+}
+
 /*# sourceMappingURL=createpost.css.map */

@@ -29,7 +29,7 @@ router.post('/register', (req, res, next) => {
         if (err) {
           throw err
         } else {
-          if (result) {
+          if (result[0]) {
             res.render('register', {
               error: "Username already exists"
             });
