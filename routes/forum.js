@@ -8,7 +8,7 @@ const router = express.Router();
 
 
 router.get('/forums', (req, res, next) => {
-
+  console.log(req.session);
   MongoClient.connect('mongodb://localhost:27017/discussionforum', {
     useNewUrlParser: true
   }, function(err, client) {
@@ -19,7 +19,8 @@ router.get('/forums', (req, res, next) => {
     db.collection('Posts').find().toArray(function(err, result) {
       if (err) throw err
       res.render('forums', {
-        results: result
+        results: result,
+        user: req.session
       });
     })
   })
