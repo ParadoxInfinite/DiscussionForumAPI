@@ -7,13 +7,13 @@
     "apollo-server": "^2.15.0",
     "bad-words": "^3.0.3",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
     "graphql": "^15.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.19"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
   },
   "scripts": {
