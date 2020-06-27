@@ -24,10 +24,11 @@ module.exports = {
     },
   },
   Mutation: {
-    async createPost(_, { body }, context) {
+    async createPost(_, { title, body }, context) {
       if (body.trim() === "") throw new UserInputError("Post cannot be empty.");
       const user = checkAuth(context);
       const newPost = new Post({
+        title,
         body,
         user: user.id,
         username: user.username,
