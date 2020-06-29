@@ -1,4 +1,6 @@
 const { UserInputError, AuthenticationError } = require("apollo-server");
+var Filter = require("bad-words"),
+  filter = new Filter();
 
 const Post = require("../../models/Post");
 const checkAuth = require("../../utils/checkAuth");
@@ -15,6 +17,7 @@ module.exports = {
         });
       }
       const post = await Post.findById(postId);
+      body = filter.clean(body);
       if (post) {
         post.comments.unshift({
           body,

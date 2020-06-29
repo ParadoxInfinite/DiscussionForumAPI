@@ -1,4 +1,6 @@
 const { AuthenticationError, UserInputError } = require("apollo-server");
+const Filter = require("bad-words"),
+  filter = new Filter();
 
 const Post = require("../../models/Post");
 const checkAuth = require("../../utils/checkAuth");
@@ -27,6 +29,8 @@ module.exports = {
     async createPost(_, { title, body }, context) {
       if (body.trim() === "") throw new UserInputError("Post cannot be empty.");
       const user = checkAuth(context);
+      title = filter.clean(title);
+      body = filter.clean(body);
       const newPost = new Post({
         title,
         body,
