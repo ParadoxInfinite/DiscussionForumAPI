@@ -7,16 +7,18 @@ const checkAuth = require("../../utils/checkAuth");
 
 module.exports = {
   Query: {
-    async getPosts() {
+    async getPosts(_, {}, context) {
       try {
+        const user = checkAuth(context);
         const posts = await Post.find().sort({ createdAt: -1 });
         return posts;
       } catch (err) {
         throw new Error(err);
       }
     },
-    async getPost(_, { postId }) {
+    async getPost(_, { postId }, context) {
       try {
+        checkAuth(context);
         const post = await Post.findById(postId);
         if (post) return post;
         else throw new Error("Post not found");
